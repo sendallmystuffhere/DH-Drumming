@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DH Drumming member area — log in or create a free account for full access." />
+  <title>Members — DH Drumming</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='none' stroke='white' stroke-width='2'/><circle cx='16' cy='16' r='4' fill='white'/></svg>" />
+  <style>
+    .tab-row { display: flex; gap: 0; margin-bottom: 28px; border-bottom: 1px solid var(--border); }
+    .tab-btn {
+      font-family: var(--font-display);
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      background: transparent;
+      border: none;
+      color: var(--dim);
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+      transition: color 0.15s;
+    }
+    .tab-btn.active { color: var(--white); border-bottom-color: var(--white); }
+    .tab-btn:hover:not(.active) { color: var(--muted); }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+  </style>
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <header class="topbar">
+    <a href="../index.html" class="logo-wrap" aria-label="DH Drumming home">
+      <div class="logo-circle"><div class="logo-circle-inner"></div></div>
+      <span class="logo-text">DH Drumming</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="scores.html">Scores</a>
+      <a href="tutorials.html">Tutorials</a>
+      <a href="performances.html">Performances</a>
+      <a href="contact.html">Contact</a>
+      <a href="members.html" class="nav-members active">Members</a>
+    </nav>
+  </header>
+
+  <!-- ── Main content ── -->
+  <main class="page-content">
+    <p class="section-label">Member area</p>
+    <h1 class="section-title">Sign in</h1>
+
+    <!-- Tabs -->
+    <div class="tab-row" role="tablist">
+      <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-login" id="tab-login">Sign in</button>
+      <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-register" id="tab-register">Register free</button>
+    </div>
+
+    <!-- Login panel -->
+    <div id="panel-login" class="tab-panel active" role="tabpanel" aria-labelledby="tab-login">
+      <div class="member-grid">
+        <div class="login-box">
+          <h2>Member login</h2>
+          <p>Access the full score library, exclusive tutorials, and competition archives.</p>
+          <form id="login-form" novalidate>
+            <div class="form-group">
+              <label for="login-email">Email address</label>
+              <input type="email" id="login-email" name="email" placeholder="your@email.com" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label for="login-password">Password</label>
+              <input type="password" id="login-password" name="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" autocomplete="current-password" required />
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%; margin-top:6px;">Sign in</button>
+          </form>
+          <p class="form-link">
+            Forgot your password? <a href="#">Reset it here</a>
+          </p>
+        </div>
+        <div>
+          <p class="section-label">Member access includes</p>
+          <div class="perk-list">
+            <div class="perk"><div class="perk-dot"></div>Complete score library — all 48 pieces including advanced studies</div>
+            <div class="perk"><div class="perk-dot"></div>All video tutorials including full-length masterclasses</div>
+            <div class="perk"><div class="perk-dot"></div>MIDI file downloads alongside every score</div>
+            <div class="perk"><div class="perk-dot"></div>Full competition footage and live performance archives</div>
+            <div class="perk"><div class="perk-dot"></div>Early access to new scores and video releases</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Register panel -->
+    <div id="panel-register" class="tab-panel" role="tabpanel" aria-labelledby="tab-register">
+      <div class="member-grid">
+        <div class="login-box">
+          <h2>Create account</h2>
+          <p>Membership is completely free. Register to unlock the full library.</p>
+          <form id="register-form" novalidate>
+            <div class="form-group">
+              <label for="reg-name">Your name</label>
+              <input type="text" id="reg-name" name="name" placeholder="First name" autocomplete="given-name" required />
+            </div>
+            <div class="form-group">
+              <label for="reg-email">Email address</label>
+              <input type="email" id="reg-email" name="email" placeholder="your@email.com" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label for="reg-password">Choose a password</label>
+              <input type="password" id="reg-password" name="password" placeholder="At least 8 characters" autocomplete="new-password" required />
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%; margin-top:6px;">Create free account</button>
+          </form>
+          <p class="form-link" style="font-size:11px; color:var(--dim);">
+            By registering you agree that your data is held securely and not shared with third parties.
+          </p>
+        </div>
+        <div>
+          <p class="section-label">What you unlock</p>
+          <div class="perk-list">
+            <div class="perk"><div class="perk-dot"></div>Complete score library — all 48 pieces including advanced studies</div>
+            <div class="perk"><div class="perk-dot"></div>All video tutorials including full-length masterclasses</div>
+            <div class="perk"><div class="perk-dot"></div>MIDI file downloads alongside every score</div>
+            <div class="perk"><div class="perk-dot"></div>Full competition footage and live performance archives</div>
+            <div class="perk"><div class="perk-dot"></div>Early access to new scores and video releases</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer-logo-wrap">
+      <div class="footer-circle" aria-hidden="true"></div>
+      <span class="footer-logo-text">DH Drumming</span>
+    </div>
+    <p class="footer-text">&copy; 2026 DH Drumming &mdash; all scores and videos are original works</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    // Tab switching
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabPanels = document.querySelectorAll('.tab-panel');
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabBtns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+        tabPanels.forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected','true');
+        document.getElementById(btn.getAttribute('aria-controls')).classList.add('active');
+      });
+    });
+
+    // Register form
+    document.getElementById('register-form').addEventListener('submit', e => {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      btn.textContent = 'Account created';
+      btn.disabled = true;
+      btn.style.opacity = '0.6';
+    });
+  </script>
+</body>
+</html>

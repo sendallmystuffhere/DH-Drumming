@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DH Drumming score library — downloadable PDF and MIDI drum scores across jazz, rock, funk, and more." />
+  <title>Score Library — DH Drumming</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='none' stroke='white' stroke-width='2'/><circle cx='16' cy='16' r='4' fill='white'/></svg>" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <header class="topbar">
+    <a href="../index.html" class="logo-wrap" aria-label="DH Drumming home">
+      <div class="logo-circle"><div class="logo-circle-inner"></div></div>
+      <span class="logo-text">DH Drumming</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="scores.html" class="active">Scores</a>
+      <a href="tutorials.html">Tutorials</a>
+      <a href="performances.html">Performances</a>
+      <a href="contact.html">Contact</a>
+      <a href="members.html" class="nav-members">Members</a>
+    </nav>
+  </header>
+
+  <!-- ── Main content ── -->
+  <main class="page-content">
+    <p class="section-label">Score library</p>
+    <h1 class="section-title">Sheet music</h1>
+    <p class="section-body">
+      Download PDF scores and MIDI files. Free scores are available to all visitors —
+      members get full access to the complete library including advanced studies.
+    </p>
+
+    <!-- Filters -->
+    <div class="filter-row" role="group" aria-label="Filter scores">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="jazz">Jazz</button>
+      <button class="filter-btn" data-filter="rock">Rock</button>
+      <button class="filter-btn" data-filter="funk">Funk</button>
+      <button class="filter-btn" data-filter="progressive">Progressive</button>
+      <button class="filter-btn" data-filter="metal">Metal</button>
+      <button class="filter-btn" data-filter="beginner">Beginner</button>
+      <button class="filter-btn" data-filter="advanced">Advanced</button>
+    </div>
+
+    <!-- Score list -->
+    <div class="score-list" role="list">
+
+      <div class="score-item" data-genre="funk" data-level="intermediate" role="listitem">
+        <div class="score-circle" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        </div>
+        <div class="score-info">
+          <div class="score-name">Cold Blood Groove</div>
+          <div class="score-meta">Funk &middot; 4/4 &middot; Intermediate</div>
+        </div>
+        <span class="score-tag">PDF + MIDI</span>
+      </div>
+
+      <div class="score-item" data-genre="jazz" data-level="advanced" role="listitem">
+        <div class="score-circle" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        </div>
+        <div class="score-info">
+          <div class="score-name">Blue Five Jazz Comping</div>
+          <div class="score-meta">Jazz &middot; 5/4 &middot; Advanced</div>
+        </div>
+        <span class="score-tag">PDF</span>
+      </div>
+
+      <div class="score-item" data-genre="rock" data-level="beginner" role="listitem">
+        <div class="score-circle" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        </div>
+        <div class="score-info">
+          <div class="score-name">Rock Steady Fill Series</div>
+          <div class="score-meta">Rock &middot; 4/4 &middot; Beginner</div>
+        </div>
+        <span class="score-tag">PDF + MIDI</span>
+      </div>
+
+      <div class="score-item" data-genre="progressive" data-level="advanced" role="listitem">
+        <div class="score-circle" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        </div>
+        <div class="score-info">
+          <div class="score-name">Odd Time Study No. 7</div>
+          <div class="score-meta">Progressive &middot; 7/8 &middot; Advanced</div>
+        </div>
+        <span class="score-tag members">Members only</span>
+      </div>
+
+      <div class="score-item" data-genre="jazz" data-level="intermediate" role="listitem">
+        <div class="score-circle" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        </div>
+        <div class="score-info">
+          <div class="score-name">Brushwork Ballad</div>
+          <div class="score-meta">Jazz &middot; 3/4 &middot; Intermediate</div>
+        </div>
+        <span class="score-tag">PDF</span>
+      </div>
+
+      <div class="score-item" data-genre="metal" data-level="advanced" role="listitem">
+        <div class="score-circle" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        </div>
+        <div class="score-info">
+          <div class="score-name">Double Kick Workout</div>
+          <div class="score-meta">Metal &middot; 4/4 &middot; Advanced</div>
+        </div>
+        <span class="score-tag members">Members only</span>
+      </div>
+
+      <div class="score-item" data-genre="funk" data-level="beginner" role="listitem">
+        <div class="score-circle" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        </div>
+        <div class="score-info">
+          <div class="score-name">The Pocket — Funk Essentials</div>
+          <div class="score-meta">Funk &middot; 4/4 &middot; Beginner</div>
+        </div>
+        <span class="score-tag">PDF + MIDI</span>
+      </div>
+
+      <div class="score-item" data-genre="rock" data-level="advanced" role="listitem">
+        <div class="score-circle" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        </div>
+        <div class="score-info">
+          <div class="score-name">Open Hi-Hat Study</div>
+          <div class="score-meta">Rock &middot; 4/4 &middot; Advanced</div>
+        </div>
+        <span class="score-tag members">Members only</span>
+      </div>
+
+    </div>
+
+    <p style="margin-top:28px; font-size:12px; color:var(--dim);">
+      Members-only scores are unlocked with a free account.
+      <a href="members.html" style="color:var(--muted); text-decoration:underline;">Register here &rarr;</a>
+    </p>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer-logo-wrap">
+      <div class="footer-circle" aria-hidden="true"></div>
+      <span class="footer-logo-text">DH Drumming</span>
+    </div>
+    <p class="footer-text">&copy; 2026 DH Drumming &mdash; all scores and videos are original works</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
